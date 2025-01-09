@@ -7,17 +7,35 @@
 </head>
 <body>
     <h2>Curso JQuery</h2>
-    <p id="parrafo1">Hola este es un párrafo para nuestra página.</p>
-    <p class="parrafo2">Hola este es un segundo párrafo.</p>
+    <!-- <p id="parrafo1">Hola este es un párrafo para nuestra página.</p> -->
+    <!-- <p class="parrafo2">Hola este es un segundo párrafo.</p> -->
+    
+    <p>Hola este es un párrafo para nuestra página.
+        <p id="p1">Este es un párrafo dentro de otro párrafo!</p>
+        <p class="c1">Este es un segundo párrafo dentro de otro párrafo!</p>
+    </p>
+
+    <ul>
+        <li>Perro</li>
+        <li>Capibara</li>
+        <li>Gato</li>
+    </ul>
+
+    <ul>
+        <li>Toyota</li>
+        <li>Hiunday</li>
+        <li>Nissan</li>
+    </ul>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     <script>
 
         $(document).ready(function(){
+        // Selectores compuestos
 
-            // $('h2').hide();
-            // $('#parrafo1').hide();
-            // $('.parrafo2').hide();
+            $("p.c1").hide();
+
+            $("ul li:first-child").hide();
 
         });
 
