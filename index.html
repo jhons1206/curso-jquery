@@ -7,6 +7,8 @@
 </head>
 <body>
     <h2>Curso JQuery</h2>
+    <h2>Curso JQuery 2</h2>
+    <h2>Curso JQuery 3</h2>
 
     <ul>
         <li>Perro</li>
@@ -24,33 +26,9 @@
     <script>
 
         $(document).ready(function(){
-
-            $("ul li:first-child").hide(1000);
-
-            // $(selector).hide(speed, callback);
-
-            Eventos Mouse
-            - click
-            - dblclik
-            - mouseenter
-            - mouseleave
-            
-            Eventos Teclado
-            - keypress
-            - keydown
-            - keyup
-
-            Eventos de formularios
-            - submit
-            - change
-            - focus
-            - blur
-
-            Eventos para documentos
-            - load
-            - resize
-            - scroll
-            - unload
+            $("h2").click(function(){
+                $("h2").hide(2000);
+            });
 
         });
 
